@@ -1,0 +1,470 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Web\\Web.csproj": {}
+  },
+  "projects": {
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismail al ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismail al ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismail al ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj",
+        "projectName": "Migrations.PostgreSQL",
+        "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.PostgreSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismail al ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\Migrations.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\Migrations.SqlServer.csproj",
+        "projectName": "Migrations.SqlServer",
+        "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\Migrations.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismail al ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Web\\Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Web\\Web.csproj",
+        "projectName": "Web",
+        "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismail al ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Application\\Application.csproj"
+              },
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Infrastructure\\Infrastructure.csproj"
+              },
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj"
+              },
+              "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\Migrations.SqlServer.csproj": {
+                "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\Migrations.SqlServer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
