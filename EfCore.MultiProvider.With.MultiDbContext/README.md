@@ -35,33 +35,25 @@ A .NET 9.0 web API project demonstrating multi-database provider support with En
 
 3. **Apply database migrations**
    - For SQL Server:
-   - **.NET CLI**
-     ```bash
-     dotnet ef database update --project Migrations.SqlServer --startup-project Web
-     ```
    - **Visual Studio Console**
      ```bash
-     update-database
+     Update-Database -Project Infrastructure -StartupProject Web -Context SqlServerApplicationDbContext
      ```
    - For PostgreSQL:
-   - **.NET CLI**
-     ```bash
-     dotnet ef database update --project Migrations.PostgreSQL --startup-project Web
-     ```
    - **Visual Studio Console**
      ```bash
-     update-database
+     Update-Database -Project Infrastructure -StartupProject Web -Context PostgreSqlApplicationDbContext
      ```
 4. **Add migrations**
    - For SQL Server:
    - **Visual Studio Console**
      ```bash
-     Add-Migration Initial -Context ApplicationDbContext -Project Migrations.SqlServer -OutputDir ApplicationDbContextMigrations
+     Add-Migration Initial_MSSQL -Project Infrastructure -StartupProject Web -Context SqlServerApplicationDbContext -OutputDir "Migrations\SqlServer"
      ```
    - For PostgreSQL:
    - **Visual Studio Console**
      ```bash
-     Add-Migration Initial -Context ApplicationDbContext -Project Migrations.PostgreSQL -OutputDir ApplicationDbContextMigrations
+     Add-Migration Initial_PostgreSQL -Project Infrastructure -StartupProject Web -Context PostgreSqlApplicationDbContext -OutputDir "Migrations\PostgreSQL"
      ```
 
 5. **Run the application**
@@ -78,8 +70,6 @@ A .NET 9.0 web API project demonstrating multi-database provider support with En
 - **Application**: Implements business logic and use cases
 - **Infrastructure**: Handles data access and external services
 - **Web**: API layer with controllers and configuration
-- **Migrations.SqlServer**: Database migrations for SQL Server
-- **Migrations.PostgreSQL**: Database migrations for PostgreSQL
 
 ## Available Endpoints
 
@@ -100,7 +90,7 @@ The application can be configured using `appsettings.json` or environment variab
 
 ## Adding a New Database Provider
 
-1. Add a new migration project for the provider
+1. Add a new Context Type for the provider
 2. Update the `ApplicationDbContext` configuration in `DependencyInjection.cs`
 3. Add the provider-specific configuration in `Program.cs`
 

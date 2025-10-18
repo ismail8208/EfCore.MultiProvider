@@ -1,10 +1,8 @@
 ﻿using Application.Common.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 
 
 namespace Infrastructure.Data;
@@ -13,32 +11,28 @@ public static class DependencyInjection
 {
 	public static void AddInfrastructureServices(this IHostApplicationBuilder builder)
 	{
-		builder.Services.AddOptions<DatabaseOptions>()
-			.BindConfiguration(nameof(DatabaseOptions))
-			.PostConfigure(config =>
+
+		var settings = builder.Configuration.GetSection(nameof(DatabaseOptions)).Get<DatabaseOptions>();
+		_ = settings ?? throw new InvalidOperationException("Database settings are not configured properly.");
+
+		if (settings.Provider.ToUpperInvariant() == DbProviders.MSSQL)
+		{
+			builder.Services.AddDbContext<SqlServerApplicationDbContext>(options =>
 			{
-				Console.WriteLine($"current db provider: {config.Provider}");
+				options.UseSqlServer(settings.ConnectionString);
 			});
 
-		builder.Services.AddDbContext<ApplicationDbContext>((sp, options) =>
+			builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<SqlServerApplicationDbContext>());
+		}
+		else if (settings.Provider.ToUpperInvariant() == DbProviders.POSTGRESQL)
 		{
-			options.AddInterceptors(sp.GetServices<ISaveChangesInterceptor>());
-
-			var settings = sp.GetRequiredService<IOptions<DatabaseOptions>>();
-			var _settings = settings.Value;
-
-			if (_settings.Provider.ToUpperInvariant() == DbProviders.MSSQL)
+			builder.Services.AddDbContext<PostgreSqlApplicationDbContext>(options =>
 			{
-				options.UseSqlServer(_settings.ConnectionString, x => x.MigrationsAssembly(DbProviders.MSSQLASSEMBLY));
-			}
-			else if (_settings.Provider.ToUpperInvariant() == DbProviders.POSTGRESQL)
-			{
-				options.UseNpgsql(_settings.ConnectionString, x => x.MigrationsAssembly(DbProviders.POSTGRESQLASSEMBLY));
-			}
+				options.UseNpgsql(settings.ConnectionString);
+			});
 
-		});
-
-		builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
+			builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<PostgreSqlApplicationDbContext>());
+		}
 
 	}
 }

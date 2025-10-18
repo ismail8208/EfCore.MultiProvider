@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 namespace Infrastructure.Data;
-public class ApplicationDbContext : DbContext, IApplicationDbContext
+public class ApplicationDbContext<T> : DbContext, IApplicationDbContext where T : DbContext
 {
-	public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+	public ApplicationDbContext(DbContextOptions<T> options) : base(options) { }
 	
 	public DbSet<TodoItem> TodoItems => Set<TodoItem>();
 	
@@ -16,4 +16,14 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
 
 		base.OnModelCreating(builder);
 	}
+}
+
+public class SqlServerApplicationDbContext : ApplicationDbContext<SqlServerApplicationDbContext>
+{
+	public SqlServerApplicationDbContext(DbContextOptions<SqlServerApplicationDbContext> options) : base(options) { }
+}
+
+public class PostgreSqlApplicationDbContext : ApplicationDbContext<PostgreSqlApplicationDbContext>
+{
+	public PostgreSqlApplicationDbContext(DbContextOptions<PostgreSqlApplicationDbContext> options) : base(options) { }
 }

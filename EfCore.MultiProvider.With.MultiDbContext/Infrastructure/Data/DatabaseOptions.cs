@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Infrastructure.Data;
+﻿namespace Infrastructure.Data;
 public class DatabaseOptions
 {
 	public string Provider { get; set; } = "MSSQL";

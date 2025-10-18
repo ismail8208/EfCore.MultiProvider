@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KgOPmolOD9w=",
+  "dgSpecHash": "DBEOz1ilEr8=",
   "success": true,
-  "projectFilePath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider\\Migrations.SqlServer\\Migrations.SqlServer.csproj",
+  "projectFilePath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.OneDbContext\\Migrations.SqlServer\\Migrations.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ismail al ahmad\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ismail al ahmad\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
