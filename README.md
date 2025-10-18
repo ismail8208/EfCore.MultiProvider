@@ -26,7 +26,8 @@ Each strategy affects how you structure your DbContext and where you store your 
 
 
 🔗 **Example project (Single DbContext + Multi Migrations Projects):**  
-`👉 https://github.com/your-repo-url-here`
+`https://github.com/ismail8208/EfCore.MultiProvider/tree/main/EfCore.MultiProvider.With.MultiDbContext`
+
 ---
 
 ### ✅ 2️⃣ Multiple `DbContext` Types + Single **Migrations Project**
@@ -41,6 +42,6 @@ Each strategy affects how you structure your DbContext and where you store your 
 
 
 🔗 **Example project (Multi DbContext + Single Migrations Project):**  
-`👉 https://github.com/your-repo-url-here`
+`https://github.com/ismail8208/EfCore.MultiProvider/tree/main/EfCore.MultiProvider.With.OneDbContext`
 
 
