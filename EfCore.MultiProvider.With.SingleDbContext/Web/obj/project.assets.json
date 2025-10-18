@@ -5778,11 +5778,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Web\\Web.csproj",
+      "projectUniqueName": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Web\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Web\\Web.csproj",
+      "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Web\\Web.csproj",
       "packagesPath": "C:\\Users\\ismail al ahmad\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Web\\obj\\",
+      "outputPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5802,17 +5802,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Application\\Application.csproj": {
-              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Application\\Application.csproj"
+            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Application\\Application.csproj": {
+              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Application\\Application.csproj"
             },
-            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Infrastructure\\Infrastructure.csproj"
             },
-            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj": {
-              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj"
+            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj": {
+              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Migrations.PostgreSQL\\Migrations.PostgreSQL.csproj"
             },
-            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Migrations.SqlServer\\Migrations.SqlServer.csproj": {
-              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.MultiDbContext\\Migrations.SqlServer\\Migrations.SqlServer.csproj"
+            "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Migrations.SqlServer\\Migrations.SqlServer.csproj": {
+              "projectPath": "D:\\Learning\\ProgramigPtrojects\\EfCore.MultiProvider\\EfCore.MultiProvider.With.SingleDbContext\\Migrations.SqlServer\\Migrations.SqlServer.csproj"
             }
           }
         }
